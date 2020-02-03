@@ -1,142 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Initiative for Collaborative Research</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      html,
+      body {
+        height: 100%;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Initiative for Collaborative Research</title>
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300&display=swap" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body {
-      height: 100%;
-    }
+      .font-sans {
+        font-family: Roboto, -apple-system, "Helvetica Neue", sans-serif;
+      }
 
-    .font-sans {
-      font-family: Roboto, -apple-system, 'Helvetica Neue', sans-serif
-    }
+      .font-serif {
+        font-family: "Roboto Slab", serif;
+      }
 
-    .font-serif {
-      font-family: 'Roboto Slab', serif
-    }
+      .bg-blue-100 {
+        background-color: #f0f2fa;
+      }
 
-    .bg-blue-100 {
-      background-color: #F0F2FA;
-    }
+      .bg-blue-200 {
+        background-color: #d5ddf1;
+      }
 
-    .bg-blue-200 {
-      background-color: #D5DDF1;
-    }
+      .bg-blue-300 {
+        background-color: #bac7e8;
+      }
 
-    .bg-blue-300 {
-      background-color: #BAC7E8;
-    }
+      .bg-blue-400 {
+        background-color: #889ed8;
+      }
 
-    .bg-blue-400 {
-      background-color: #889ED8;
-    }
+      .bg-blue-500 {
+        background-color: #627ecb;
+      }
 
-    .bg-blue-500 {
-      background-color: #627ECB;
-    }
+      .bg-blue-600 {
+        background-color: #4769c2;
+      }
 
-    .bg-blue-600 {
-      background-color: #4769C2;
-    }
+      .bg-blue-700 {
+        background-color: #334f99;
+      }
 
-    .bg-blue-700 {
-      background-color: #334F99;
-    }
+      .bg-blue-800 {
+        background-color: #273d77;
+      }
 
-    .bg-blue-800 {
-      background-color: #273D77;
-    }
+      .bg-blue-900 {
+        background-color: #1b2a52;
+      }
 
-    .bg-blue-900 {
-      background-color: #1B2A52;
-    }
+      .text-blue-100 {
+        color: #f0f2fa;
+      }
 
-    .text-blue-100 {
-      color: #F0F2FA;
-    }
+      .text-blue-200 {
+        color: #d5ddf1;
+      }
 
-    .text-blue-200 {
-      color: #D5DDF1;
-    }
+      .text-blue-300 {
+        color: #bac7e8;
+      }
 
-    .text-blue-300 {
-      color: #BAC7E8;
-    }
+      .text-blue-400 {
+        color: #889ed8;
+      }
 
-    .text-blue-400 {
-      color: #889ED8;
-    }
+      .text-blue-500 {
+        color: #627ecb;
+      }
 
-    .text-blue-500 {
-      color: #627ECB;
-    }
+      .text-blue-600 {
+        color: #4769c2;
+      }
 
-    .text-blue-600 {
-      color: #4769C2;
-    }
+      .text-blue-700 {
+        color: #334f99;
+      }
 
-    .text-blue-700 {
-      color: #334F99;
-    }
+      .text-blue-800 {
+        color: #273d77;
+      }
 
-    .text-blue-800 {
-      color: #273D77;
-    }
+      .text-blue-900 {
+        color: #1b2a52;
+      }
+    </style>
+  </head>
 
-    .text-blue-900 {
-      color: #1B2A52;
-    }
-  </style>
-</head>
-
-<body class="font-sans bg-blue-900">
-  <main class="flex min-h-full">
-    <div class="w-1/3 flex-none"
-      style="background-image: url('papers.jpg'); background-size: cover; background-repeat: repeat;">
-    </div>
-    <div class="flex-1 bg-blue-900 text-white">
-      <div class="p-16 max-w-3xl">
-        <img src="logo.svg" />
-        <p class="mt-8 text-2xl font-light">
-          With the Initiative for Collaborative Research in Reproductive Health,
-          we’re connecting <span class="font-serif text-blue-300">journalists</span> and <span
-            class="font-serif text-blue-300">academics</span> in order
-          to
-          invest in
-          <span class="font-serif text-blue-300">evidence-based</span> news.
-        </p>
-        <p class="mt-8 text-lg font-light">
-          If you are a journalist and need research for your reproductive health
-          article, email us with a few brief sentences about your topic and what
-          data or expertise you may need, and we’ll work quickly to get you the
-          information.
-        </p>
-        <p class="mt-8 text-2xl font-light">
-          <a href="mailto:info@i4cr.org" class="underline">info@i4cr.org</a>
-        </p>
-
-        <div class="flex mt-12 justify-between">
-          <div class="flex-shrink-0">
+  <body class="font-sans bg-blue-900">
+    <main class="flex flex-col sm:flex-row min-h-full">
+      <div
+        class="sm:w-1/3 sm:flex-none"
+        style="background-image: url('papers.jpg'); background-size: cover; background-repeat: repeat;"
+      ></div>
+      <div class="sm:flex-1 bg-blue-900 text-white">
+        <div class="p-8 sm:p-16 sm:max-w-3xl">
+          <img src="logo.svg" />
+          <p class="mt-8 text-2xl font-light">
+            With the Initiative for Collaborative Research in Reproductive Health, we’re connecting
+            <span class="font-serif text-blue-300">journalists</span> and
+            <span class="font-serif text-blue-300">academics</span> in order to invest in
+            <span class="font-serif text-blue-300">evidence-based</span> news.
+          </p>
+          <p class="mt-8 text-lg font-light">
+            If you are a journalist and need research for your reproductive health article, email us
+            with a few brief sentences about your topic and what data or expertise you may need, and
+            we’ll work quickly to get you the information.
+          </p>
+          <p class="mt-8 text-2xl font-light">
+            <a href="mailto:info@i4cr.org" class="underline">info@i4cr.org</a>
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row mt-12 mb-8 mx-8 sm:mx-16">
+          <div class="">
             <h2 class="uppercase text-md mb-4">A project of</h2>
-            <a href="https://prestonwernerventures.com"><img src="pwv-logo.svg" /></a>
+            <a href="https://prestonwernerventures.com"><img src="pwv-logo.svg"/></a>
           </div>
-          <div class="flex-shrink-0">
-            <h2 class="uppercase text-md mb-4">Located at</h2>
+          <div class="mt-12 sm:ml-12 sm:mt-0">
+            <h2 class="uppercase text-md mb-4 pr-6">Located at</h2>
             <a href="https://bixby.berkeley.edu">
               <img src="bixby-logo.png" class="inline-block -mt-2 -ml-1" />
             </a>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
